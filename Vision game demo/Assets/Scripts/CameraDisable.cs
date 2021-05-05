@@ -18,7 +18,7 @@ public class CameraDisable : MonoBehaviour
         {
 
 
-            PlayerCamera.SetActive(false);
+            PlayerCamera.SetActive(true);
 
 
 
@@ -32,7 +32,7 @@ public class CameraDisable : MonoBehaviour
 
             // gameObject.enabled = true;
 
-            PlayerCamera.SetActive(true);
+            PlayerCamera.SetActive(false);
 
         }
     }
