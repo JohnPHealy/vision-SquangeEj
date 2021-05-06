@@ -8,6 +8,9 @@ TagManager:
   - InVisible
   - intro
   - intro2
+  - level1start
+  - puzzle1fall
+  - puzzletime
   layers:
   - Default
   - TransparentFX

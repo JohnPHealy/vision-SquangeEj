@@ -10,7 +10,8 @@ public class CameraDisable : MonoBehaviour
 
     private GameObject[] RedCubes;
     private GameObject[] BlueCubes;
-    private int i =0;
+    private int i = 0;
+    private int w = 0;
     void Start()
     {
 
@@ -41,6 +42,91 @@ public class CameraDisable : MonoBehaviour
             if (i == 300)
             {
                 FindObjectOfType<AudioManager>().Play("intro2");
+                i = 0;
+                Destroy(col.gameObject);
+            }
+
+        }
+
+        if (col.gameObject.tag == "puzzle1fall")
+        {
+
+            i++;
+            if (i == 1)
+            {
+                FindObjectOfType<AudioManager>().Play("puzzle1fall");
+                i = 0;
+                Destroy(col.gameObject);
+            }
+
+        }
+
+        if (col.gameObject.tag == "puzzletime")
+        {
+            Debug.Log(w);
+            w++;
+            if (w == 2000)
+            {
+
+                w = Random.Range(0, 1000);
+
+                int n = Random.Range(1, 11);
+
+                if (n == 1)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait1");
+                }
+                if (n == 2)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait2");
+                }
+                if (n == 3)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait3");
+                }
+                if (n == 4)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait4");
+                }
+                if (n == 5)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait5");
+                }
+                if (n == 6)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait6");
+                }
+                if (n == 7)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait7");
+                }
+                if (n == 8)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait8");
+                }
+                if (n == 9)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait9");
+                }
+                if (n == 10)
+                {
+                    FindObjectOfType<AudioManager>().Play("puzzlewait10");
+                }
+                if (n == 11)
+                {
+                    FindObjectOfType<AudioManager>().Play("completema");
+                }
+            }
+
+        }
+
+        if (col.gameObject.tag == "level1start")
+        {
+
+            i++;
+            if (i > 1)
+            {
+                FindObjectOfType<AudioManager>().Play("level1start");
                 i = 0;
                 Destroy(col.gameObject);
             }
