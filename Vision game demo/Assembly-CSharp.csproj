@@ -60,11 +60,14 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\IsVisible.cs" />
     <Compile Include="Assets\Scripts\RayCast.cs" />
+    <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Sound.cs" />
-    <Compile Include="Assets\Scripts\moveforeward.cs" />
     <Compile Include="Assets\Scripts\levelChangeOntrigger.cs" />
-    <Compile Include="Assets\Scripts\Restart.cs" />
+    <Compile Include="Assets\Scripts\moveforeward.cs" />
+    <Compile Include="Assets\Scripts\MoveTransform.cs" />
+    <Compile Include="Assets\Scripts\DeathOnimpact.cs" />
+    <Compile Include="Assets\PlatformAttach.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

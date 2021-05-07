@@ -132,6 +132,18 @@ public class CameraDisable : MonoBehaviour
             }
 
         }
+        if (col.gameObject.tag == "level2start")
+        {
+
+            i++;
+            if (i > 1)
+            {
+                FindObjectOfType<AudioManager>().Play("level2start");
+                i = 0;
+                Destroy(col.gameObject);
+            }
+
+        }
     }
 
     // Update is called once per frame
