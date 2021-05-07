@@ -65,10 +65,10 @@ public class CameraDisable : MonoBehaviour
         {
             Debug.Log(w);
             w++;
-            if (w == 2000)
+            if (w == 1000)
             {
 
-                w = Random.Range(0, 1000);
+                w = Random.Range(0, 400);
 
                 int n = Random.Range(1, 11);
 
